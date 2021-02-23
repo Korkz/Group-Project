@@ -21,64 +21,22 @@
 
   <link rel="stylesheet" href="style.css">
   <title>Home - My Webpage</title>
-  <style>
-body {
-  background-image: url('Carpetfloor.jpg');
-}
-</style>
-  <style>
-#div1 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}
-  #div2 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}   
-   #div3 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}   
-   #div4 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}    
-   #div5 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}    
-   #div6 {
-  width: 506px;
-  height: 398px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}  
-    </style>
-    <script>
-function allowDrop(ev) {
-  ev.preventDefault();
-}
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+     }
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-</script>
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+  </script>
   
   </head>
   <body>
