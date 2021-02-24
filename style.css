@@ -7,6 +7,10 @@
 #bodyone {	
   background-image: url('Carpetfloor.jpg');	
 }
+.br { 
+  display: block; 
+  margin-bottom: 2em; 
+}
 #div1 {
   width: 506px;
   height: 398px;
